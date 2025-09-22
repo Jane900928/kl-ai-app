@@ -25,13 +25,12 @@ const mainRoutes = {
     { path: '404', element: <PageNotFoundView /> },
   ],
 };
-
-const DemoRoutes = {
-  path: 'yideng',
-  element: <Layout />,
-  children: [{ path: 'test', element: <Test /> }],
+const notFoundRoute: RouteObject = {
+  path: '*',
+  element: <PageNotFoundView />
 };
 
-Routes.push(mainRoutes, DemoRoutes);
+
+Routes.push(mainRoutes,notFoundRoute);
 
 export default Routes;

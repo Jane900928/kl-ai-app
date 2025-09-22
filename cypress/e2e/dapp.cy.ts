@@ -1,3 +1,5 @@
+/// <reference types="cypress" />
+
 describe('DApp Page', () => {
   beforeEach(() => {
     cy.visit('/dapp');
@@ -29,7 +31,8 @@ describe('DApp Page', () => {
 
   it('should have proper navigation highlighting for DApp page', () => {
     // 检查DApp导航项是否高亮
-    cy.get('a[href="/dapp"]')
+    cy.get('nav a[href="/dapp"]')
+      .first()
       .should('have.class', 'text-blue-600')
       .should('have.class', 'font-medium');
   });
@@ -47,8 +50,8 @@ describe('DApp Page', () => {
     cy.get('main').should('be.visible');
     
     // 检查链接是否可点击
-    cy.get('a[href="/"]').should('be.visible');
-    cy.get('a[href="/dapp"]').should('be.visible');
+    cy.get('nav a[href="/"]').should('be.visible');
+    cy.get('nav a[href="/dapp"]').should('be.visible');
     
     // 检查按钮是否可点击
     cy.get('button').should('be.visible');

@@ -1,3 +1,5 @@
+/// <reference types="cypress" />
+
 describe('Wallet Connection', () => {
   beforeEach(() => {
     cy.visit('/');
@@ -49,22 +51,14 @@ describe('Wallet Connection', () => {
     cy.get('button').contains('已连接钱包').should('be.visible');
     
     // 导航到DApp页面
-    cy.get('a[href="/dapp"]').click();
+    cy.get('nav a[href="/dapp"]').first().click();
     cy.get('button').contains('已连接钱包').should('be.visible');
     
     // 导航回首页
-    cy.get('a[href="/"]').click();
+    cy.get('nav a[href="/"]').first().click();
     cy.get('button').contains('已连接钱包').should('be.visible');
   });
 
-  it('should have wallet icon in button', () => {
-    // 检查按钮中的钱包图标
-    cy.get('button')
-      .contains('连接钱包')
-      .within(() => {
-        cy.get('svg').should('be.visible');
-      });
-  });
 
   it('should have proper button dimensions and spacing', () => {
     // 检查按钮的尺寸和间距

@@ -31,7 +31,8 @@ describe('Home Page', () => {
 
   it('should have proper navigation highlighting', () => {
     // 检查首页导航项是否高亮
-    cy.get('a[href="/"]')
+    cy.get('nav a[href="/"]')
+      .first()
       .should('have.class', 'text-blue-600')
       .should('have.class', 'font-medium');
   });

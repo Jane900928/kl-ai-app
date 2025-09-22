@@ -74,7 +74,7 @@ const Header = () => {
               `}
             >
               <Wallet className="w-5 h-5 mr-2" />
-              <span>{isWalletConnected ? '已连接钱包' : '连接钱包'}</span>
+              {isWalletConnected ? '已连接钱包' : '连接钱包'}
             </button>
           </div>
         </div>

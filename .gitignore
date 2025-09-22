@@ -5,14 +5,7 @@
 
 # 依赖文件
 /node_modules
-/yarn.lock
-/.yarn
-/.yarn/cache
-/.yarn/unplugged
-/.yarn/build-state.yml
-/.yarn/install-state.gz
-/pnpm-lock.yaml
-/.pnpm-store
+
 
 # 编辑器和 IDE 配置
 .vscode

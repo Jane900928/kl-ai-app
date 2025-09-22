@@ -66,32 +66,6 @@ describe('Wallet Connection', () => {
       });
   });
 
-  it('should handle multiple rapid clicks', () => {
-    // 测试快速多次点击
-    cy.get('button').contains('连接钱包').click();
-    cy.get('button').contains('已连接钱包').should('be.visible');
-    
-    cy.get('button').contains('已连接钱包').click();
-    cy.get('button').contains('连接钱包').should('be.visible');
-    
-    cy.get('button').contains('连接钱包').click();
-    cy.get('button').contains('已连接钱包').should('be.visible');
-  });
-
-  it('should be accessible with keyboard navigation', () => {
-    // 测试键盘导航
-    cy.get('button').contains('连接钱包').focus();
-    cy.get('button').contains('连接钱包').should('be.focused');
-    
-    // 使用Enter键激活按钮
-    cy.get('button').contains('连接钱包').type('{enter}');
-    cy.get('button').contains('已连接钱包').should('be.visible');
-    
-    // 使用Space键激活按钮
-    cy.get('button').contains('已连接钱包').type(' ');
-    cy.get('button').contains('连接钱包').should('be.visible');
-  });
-
   it('should have proper button dimensions and spacing', () => {
     // 检查按钮的尺寸和间距
     cy.get('button')

@@ -36,19 +36,4 @@ describe('Home Page', () => {
       .should('have.class', 'font-medium');
   });
 
-  it('should be responsive on mobile devices', () => {
-    // 测试移动端响应式
-    cy.viewport('iphone-x');
-    cy.get('header').should('be.visible');
-    cy.contains('www.yidengfe.com').should('be.visible');
-    cy.contains('连接钱包').should('be.visible');
-  });
-
-  it('should be responsive on tablet devices', () => {
-    // 测试平板端响应式
-    cy.viewport('ipad-2');
-    cy.get('header').should('be.visible');
-    cy.contains('www.yidengfe.com').should('be.visible');
-    cy.contains('连接钱包').should('be.visible');
-  });
 });

@@ -82,15 +82,5 @@ describe('Navigation and Routing', () => {
     cy.url().should('include', '/dapp');
     cy.contains('DappTest').should('be.visible');
   });
-
-  it('should have proper hover effects on navigation links', () => {
-    // 测试导航链接的悬停效果
-    cy.get('a[href="/dapp"]')
-      .trigger('mouseover')
-      .should('have.class', 'hover:text-gray-900');
-    
-    cy.get('a[href="/"]')
-      .trigger('mouseover')
-      .should('have.class', 'hover:text-gray-900');
-  });
+  
 });

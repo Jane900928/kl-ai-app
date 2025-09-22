@@ -20,8 +20,7 @@ const mainRoutes = {
   path: '/',
   element: <Layout />,
   children: [
-    { path: '*', element: <PageNotFoundView /> },
-    { path: '/dapp', element: <DappTest /> },
+    { path: 'dapp', element: <DappTest /> },
     { path: '/', element: <Home /> },
     { path: '404', element: <PageNotFoundView /> },
   ],

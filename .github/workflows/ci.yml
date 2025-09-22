@@ -61,7 +61,7 @@ jobs:
       
     - name: Start application server
       run: |
-        npx serve dist -p 3000 &
+        npx serve dist -p 3000 -s &
         sleep 10
       env:
         CI: true
@@ -69,7 +69,7 @@ jobs:
     - name: Run Cypress E2E tests
       uses: cypress-io/github-action@v6
       with:
-        start: npx serve dist -p 3000
+        start: npx serve dist -p 3000 -s
         wait-on: 'http://localhost:3000'
         wait-on-timeout: 120
         browser: chrome

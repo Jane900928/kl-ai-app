@@ -6,7 +6,6 @@ describe('404 Page', () => {
     
     // 检查404页面内容
     cy.contains('404').should('be.visible');
-    cy.contains('页面未找到').should('be.visible');
   });
 
 

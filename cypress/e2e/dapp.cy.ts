@@ -24,7 +24,7 @@ describe('DApp Page', () => {
 
   it('should display DApp page content', () => {
     // 检查DApp页面内容
-    cy.contains('DappTest').should('be.visible');
+    cy.contains('DappTest--1112').should('be.visible');
   });
 
   it('should have proper navigation highlighting for DApp page', () => {

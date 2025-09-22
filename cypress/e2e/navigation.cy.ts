@@ -1,3 +1,5 @@
+/// <reference types="cypress" />
+
 describe('Navigation and Routing', () => {
   beforeEach(() => {
     cy.visit('/');

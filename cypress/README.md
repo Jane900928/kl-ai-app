@@ -12,7 +12,6 @@ cypress/
 │   ├── navigation.cy.ts        # 导航和路由测试
 │   ├── wallet.cy.ts            # 钱包连接测试
 │   ├── 404.cy.ts               # 404页面测试
-│   ├── integration.cy.ts       # 综合集成测试
 │   └── performance.cy.ts       # 性能测试
 ├── support/
 │   ├── commands.ts             # 自定义命令

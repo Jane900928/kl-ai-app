@@ -63,8 +63,8 @@ describe('Performance Tests', () => {
   it('should have efficient memory usage', () => {
     // 检查内存使用情况（如果支持）
     cy.window().then((win) => {
-      if (win.performance.memory) {
-        const memory = win.performance.memory;
+      if ((win.performance as any).memory) {
+        const memory = (win.performance as any).memory;
         const usedMemory = memory.usedJSHeapSize;
         const totalMemory = memory.totalJSHeapSize;
         

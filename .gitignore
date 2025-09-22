@@ -1,0 +1,43 @@
+# 构建输出
+/dist
+/build
+/lib
+
+# 依赖文件
+/node_modules
+/yarn.lock
+/.yarn
+/.yarn/cache
+/.yarn/unplugged
+/.yarn/build-state.yml
+/.yarn/install-state.gz
+/pnpm-lock.yaml
+/.pnpm-store
+
+# 编辑器和 IDE 配置
+.vscode
+.idea
+*.iml
+.sublime-workspace
+.sublime-project
+
+# 日志文件
+/*.log
+/logs
+
+# 临时文件
+/*.tmp
+.cache
+
+# 环境变量文件
+.env
+.env.development
+.env.production
+
+# 系统特定文件
+.DS_Store
+Thumbs.db
+
+# 测试报告
+/coverage
+/test-reports

@@ -1,0 +1,563 @@
+{
+  "numFailedTestSuites": 1,
+  "numFailedTests": 7,
+  "numPassedTestSuites": 0,
+  "numPassedTests": 16,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 1,
+  "numTotalTests": 23,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": false,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1758203789729,
+  "success": false,
+  "testResults": [
+    {
+      "leaks": false,
+      "numFailingTests": 7,
+      "numPassingTests": 16,
+      "numPendingTests": 0,
+      "numTodoTests": 0,
+      "openHandles": [],
+      "perfStats": {
+        "end": 1758203789969,
+        "loadTestEnvironmentEnd": 1758203789766,
+        "loadTestEnvironmentStart": 1758203789749,
+        "runtime": 203,
+        "setupAfterEnvEnd": 1758203789804,
+        "setupAfterEnvStart": 1758203789804,
+        "setupFilesEnd": 1758203789766,
+        "setupFilesStart": 1758203789766,
+        "slow": false,
+        "start": 1758203789766
+      },
+      "skipped": false,
+      "snapshot": {
+        "added": 0,
+        "fileDeleted": false,
+        "matched": 0,
+        "unchecked": 0,
+        "uncheckedKeys": [],
+        "unmatched": 0,
+        "updated": 0
+      },
+      "testFilePath": "/Users/konglin/Desktop/kl-ai-app/tests/unit/formatwallet.spec.ts",
+      "testResults": [
+        {
+          "ancestorTitles": [
+            "formatWalletAddress",
+            "基本格式化功能"
+          ],
+          "duration": 127,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "formatWalletAddress 基本格式化功能 应该正确格式化标准以太坊地址",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1758203789806,
+          "status": "passed",
+          "title": "应该正确格式化标准以太坊地址"
+        },
+        {
+          "ancestorTitles": [
+            "formatWalletAddress",
+            "基本格式化功能"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "formatWalletAddress 基本格式化功能 应该正确格式化不带0x前缀的地址",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1758203789933,
+          "status": "passed",
+          "title": "应该正确格式化不带0x前缀的地址"
+        },
+        {
+          "ancestorTitles": [
+            "formatWalletAddress",
+            "基本格式化功能"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "formatWalletAddress 基本格式化功能 应该支持自定义起始长度",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1758203789935,
+          "status": "passed",
+          "title": "应该支持自定义起始长度"
+        },
+        {
+          "ancestorTitles": [
+            "formatWalletAddress",
+            "基本格式化功能"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "formatWalletAddress 基本格式化功能 应该支持自定义结束长度",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1758203789935,
+          "status": "passed",
+          "title": "应该支持自定义结束长度"
+        },
+        {
+          "ancestorTitles": [
+            "formatWalletAddress",
+            "基本格式化功能"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "actual": "0x12345678...12345678",
+                "expected": "0x12345678...ef12345678",
+                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"0x12345678...\u001b[7mef\u001b[27m12345678\"\u001b[39m\nReceived: \u001b[31m\"0x12345678...12345678\"\u001b[39m",
+                "name": "toBe",
+                "pass": false
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"0x12345678...\u001b[7mef\u001b[27m12345678\"\u001b[39m\nReceived: \u001b[31m\"0x12345678...12345678\"\u001b[39m\n    at Object.result (/Users/konglin/Desktop/kl-ai-app/tests/unit/formatwallet.spec.ts:32:13)\n    at Promise.finally.completed (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:1556:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:1496:10)\n    at _callCircusTest (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:1006:40)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at _runTest (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:946:3)\n    at _runTestsForDescribeBlock (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:839:13)\n    at _runTestsForDescribeBlock (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at _runTestsForDescribeBlock (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at run (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:757:3)\n    at runAndTransformResultsToJestFormat (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:1917:21)\n    at jestAdapter (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/runner.js:101:19)\n    at runTestInternal (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-runner/build/index.js:275:16)\n    at runTest (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-runner/build/index.js:343:7)"
+          ],
+          "fullName": "formatWalletAddress 基本格式化功能 应该支持同时自定义起始和结束长度",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "startAt": 1758203789936,
+          "status": "failed",
+          "title": "应该支持同时自定义起始和结束长度"
+        },
+        {
+          "ancestorTitles": [
+            "formatWalletAddress",
+            "边界情况"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "formatWalletAddress 边界情况 应该处理空字符串",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1758203789940,
+          "status": "passed",
+          "title": "应该处理空字符串"
+        },
+        {
+          "ancestorTitles": [
+            "formatWalletAddress",
+            "边界情况"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "formatWalletAddress 边界情况 应该处理null或undefined（如果类型允许）",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1758203789941,
+          "status": "passed",
+          "title": "应该处理null或undefined（如果类型允许）"
+        },
+        {
+          "ancestorTitles": [
+            "formatWalletAddress",
+            "边界情况"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "formatWalletAddress 边界情况 应该处理过短的地址（不进行格式化）",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1758203789941,
+          "status": "passed",
+          "title": "应该处理过短的地址（不进行格式化）"
+        },
+        {
+          "ancestorTitles": [
+            "formatWalletAddress",
+            "边界情况"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "actual": "0x123456...7890",
+                "expected": "0x1234567890",
+                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"0x1234567890\"\u001b[39m\nReceived: \u001b[31m\"0x123456\u001b[7m...\u001b[27m7890\"\u001b[39m",
+                "name": "toBe",
+                "pass": false
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"0x1234567890\"\u001b[39m\nReceived: \u001b[31m\"0x123456\u001b[7m...\u001b[27m7890\"\u001b[39m\n    at Object.result (/Users/konglin/Desktop/kl-ai-app/tests/unit/formatwallet.spec.ts:60:13)\n    at Promise.finally.completed (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:1556:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:1496:10)\n    at _callCircusTest (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:1006:40)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at _runTest (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:946:3)\n    at _runTestsForDescribeBlock (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:839:13)\n    at _runTestsForDescribeBlock (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at _runTestsForDescribeBlock (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at run (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:757:3)\n    at runAndTransformResultsToJestFormat (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:1917:21)\n    at jestAdapter (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/runner.js:101:19)\n    at runTestInternal (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-runner/build/index.js:275:16)\n    at runTest (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-runner/build/index.js:343:7)"
+          ],
+          "fullName": "formatWalletAddress 边界情况 应该处理刚好等于最小长度的地址",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "startAt": 1758203789943,
+          "status": "failed",
+          "title": "应该处理刚好等于最小长度的地址"
+        },
+        {
+          "ancestorTitles": [
+            "formatWalletAddress",
+            "边界情况"
+          ],
+          "duration": 2,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "formatWalletAddress 边界情况 应该处理长度刚好超过最小长度的地址",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1758203789944,
+          "status": "passed",
+          "title": "应该处理长度刚好超过最小长度的地址"
+        },
+        {
+          "ancestorTitles": [
+            "formatWalletAddress",
+            "不同类型的地址"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "actual": "1A1zP1...vfNa",
+                "expected": "1A1zP1...fNa",
+                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"1A1zP1...fNa\"\u001b[39m\nReceived: \u001b[31m\"1A1zP1...\u001b[7mv\u001b[27mfNa\"\u001b[39m",
+                "name": "toBe",
+                "pass": false
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"1A1zP1...fNa\"\u001b[39m\nReceived: \u001b[31m\"1A1zP1...\u001b[7mv\u001b[27mfNa\"\u001b[39m\n    at Object.result (/Users/konglin/Desktop/kl-ai-app/tests/unit/formatwallet.spec.ts:75:13)\n    at Promise.finally.completed (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:1556:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:1496:10)\n    at _callCircusTest (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:1006:40)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at _runTest (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:946:3)\n    at _runTestsForDescribeBlock (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:839:13)\n    at _runTestsForDescribeBlock (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at _runTestsForDescribeBlock (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at run (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:757:3)\n    at runAndTransformResultsToJestFormat (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:1917:21)\n    at jestAdapter (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/runner.js:101:19)\n    at runTestInternal (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-runner/build/index.js:275:16)\n    at runTest (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-runner/build/index.js:343:7)"
+          ],
+          "fullName": "formatWalletAddress 不同类型的地址 应该处理比特币地址格式",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "startAt": 1758203789946,
+          "status": "failed",
+          "title": "应该处理比特币地址格式"
+        },
+        {
+          "ancestorTitles": [
+            "formatWalletAddress",
+            "不同类型的地址"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "formatWalletAddress 不同类型的地址 应该处理Solana地址格式",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1758203789947,
+          "status": "passed",
+          "title": "应该处理Solana地址格式"
+        },
+        {
+          "ancestorTitles": [
+            "formatWalletAddress",
+            "不同类型的地址"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "formatWalletAddress 不同类型的地址 应该处理长地址",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1758203789947,
+          "status": "passed",
+          "title": "应该处理长地址"
+        },
+        {
+          "ancestorTitles": [
+            "formatWalletAddress",
+            "参数验证"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "formatWalletAddress 参数验证 应该处理startLength为0的情况",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1758203789947,
+          "status": "passed",
+          "title": "应该处理startLength为0的情况"
+        },
+        {
+          "ancestorTitles": [
+            "formatWalletAddress",
+            "参数验证"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "actual": "0x123456...1234567890abcdef1234567890abcdef12345678",
+                "expected": "0x123456...",
+                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"0x123456...\"\u001b[39m\nReceived: \u001b[31m\"0x123456...\u001b[7m1234567890abcdef1234567890abcdef12345678\u001b[27m\"\u001b[39m",
+                "name": "toBe",
+                "pass": false
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"0x123456...\"\u001b[39m\nReceived: \u001b[31m\"0x123456...\u001b[7m1234567890abcdef1234567890abcdef12345678\u001b[27m\"\u001b[39m\n    at Object.result (/Users/konglin/Desktop/kl-ai-app/tests/unit/formatwallet.spec.ts:102:13)\n    at Promise.finally.completed (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:1556:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:1496:10)\n    at _callCircusTest (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:1006:40)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at _runTest (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:946:3)\n    at _runTestsForDescribeBlock (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:839:13)\n    at _runTestsForDescribeBlock (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at _runTestsForDescribeBlock (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at run (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:757:3)\n    at runAndTransformResultsToJestFormat (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:1917:21)\n    at jestAdapter (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/runner.js:101:19)\n    at runTestInternal (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-runner/build/index.js:275:16)\n    at runTest (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-runner/build/index.js:343:7)"
+          ],
+          "fullName": "formatWalletAddress 参数验证 应该处理endLength为0的情况",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "startAt": 1758203789947,
+          "status": "failed",
+          "title": "应该处理endLength为0的情况"
+        },
+        {
+          "ancestorTitles": [
+            "formatWalletAddress",
+            "参数验证"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "actual": "0x...1234567890abcdef1234567890abcdef12345678",
+                "expected": "0x...",
+                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"0x...\"\u001b[39m\nReceived: \u001b[31m\"0x...\u001b[7m1234567890abcdef1234567890abcdef12345678\u001b[27m\"\u001b[39m",
+                "name": "toBe",
+                "pass": false
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"0x...\"\u001b[39m\nReceived: \u001b[31m\"0x...\u001b[7m1234567890abcdef1234567890abcdef12345678\u001b[27m\"\u001b[39m\n    at Object.result (/Users/konglin/Desktop/kl-ai-app/tests/unit/formatwallet.spec.ts:108:13)\n    at Promise.finally.completed (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:1556:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:1496:10)\n    at _callCircusTest (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:1006:40)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at _runTest (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:946:3)\n    at _runTestsForDescribeBlock (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:839:13)\n    at _runTestsForDescribeBlock (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at _runTestsForDescribeBlock (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at run (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:757:3)\n    at runAndTransformResultsToJestFormat (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:1917:21)\n    at jestAdapter (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/runner.js:101:19)\n    at runTestInternal (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-runner/build/index.js:275:16)\n    at runTest (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-runner/build/index.js:343:7)"
+          ],
+          "fullName": "formatWalletAddress 参数验证 应该处理两个长度都为0的情况",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "startAt": 1758203789947,
+          "status": "failed",
+          "title": "应该处理两个长度都为0的情况"
+        },
+        {
+          "ancestorTitles": [
+            "formatWalletAddress",
+            "参数验证"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "actual": "0x1234567890abcdef1234567890abcdef1234567...234567890abcdef1234567890abcdef12345678",
+                "expected": "0x...",
+                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"0x\u001b[7m...\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"0x\u001b[7m1234567890abcdef1234567890abcdef1234567...234567890abcdef1234567890abcdef12345678\u001b[27m\"\u001b[39m",
+                "name": "toBe",
+                "pass": false
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"0x\u001b[7m...\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"0x\u001b[7m1234567890abcdef1234567890abcdef1234567...234567890abcdef1234567890abcdef12345678\u001b[27m\"\u001b[39m\n    at Object.formatWalletAddress (/Users/konglin/Desktop/kl-ai-app/tests/unit/formatwallet.spec.ts:114:22)\n    at Promise.finally.completed (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:1556:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:1496:10)\n    at _callCircusTest (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:1006:40)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at _runTest (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:946:3)\n    at _runTestsForDescribeBlock (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:839:13)\n    at _runTestsForDescribeBlock (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at _runTestsForDescribeBlock (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at run (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:757:3)\n    at runAndTransformResultsToJestFormat (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:1917:21)\n    at jestAdapter (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/runner.js:101:19)\n    at runTestInternal (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-runner/build/index.js:275:16)\n    at runTest (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-runner/build/index.js:343:7)"
+          ],
+          "fullName": "formatWalletAddress 参数验证 应该处理负数参数",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 0,
+          "retryReasons": [],
+          "startAt": 1758203789947,
+          "status": "failed",
+          "title": "应该处理负数参数"
+        },
+        {
+          "ancestorTitles": [
+            "formatWalletAddress",
+            "特殊格式"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "formatWalletAddress 特殊格式 应该处理包含大写字母的地址",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1758203789949,
+          "status": "passed",
+          "title": "应该处理包含大写字母的地址"
+        },
+        {
+          "ancestorTitles": [
+            "formatWalletAddress",
+            "特殊格式"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "formatWalletAddress 特殊格式 应该处理混合大小写的地址",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1758203789949,
+          "status": "passed",
+          "title": "应该处理混合大小写的地址"
+        },
+        {
+          "ancestorTitles": [
+            "formatWalletAddress",
+            "特殊格式"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "formatWalletAddress 特殊格式 应该保持原始大小写格式",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1758203789950,
+          "status": "passed",
+          "title": "应该保持原始大小写格式"
+        },
+        {
+          "ancestorTitles": [
+            "formatWalletAddress",
+            "性能测试"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "formatWalletAddress 性能测试 应该高效处理大量地址",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1758203789950,
+          "status": "passed",
+          "title": "应该高效处理大量地址"
+        },
+        {
+          "ancestorTitles": [
+            "formatWalletAddress",
+            "实际使用场景"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [
+            {
+              "matcherResult": {
+                "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/^0x[a-fA-F0-9]{6}\\.\\.\\..[a-fA-F0-9]{4}$/\u001b[39m\nReceived string:  \u001b[31m\"0x742d35...D8c8\"\u001b[39m",
+                "pass": false
+              }
+            }
+          ],
+          "failureMessages": [
+            "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/^0x[a-fA-F0-9]{6}\\.\\.\\..[a-fA-F0-9]{4}$/\u001b[39m\nReceived string:  \u001b[31m\"0x742d35...D8c8\"\u001b[39m\n    at Object.walletAddress (/Users/konglin/Desktop/kl-ai-app/tests/unit/formatwallet.spec.ts:161:42)\n    at Promise.finally.completed (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:1556:28)\n    at new Promise (<anonymous>)\n    at callAsyncCircusFn (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:1496:10)\n    at _callCircusTest (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:1006:40)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at _runTest (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:946:3)\n    at _runTestsForDescribeBlock (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:839:13)\n    at _runTestsForDescribeBlock (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at _runTestsForDescribeBlock (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:829:11)\n    at run (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:757:3)\n    at runAndTransformResultsToJestFormat (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/jestAdapterInit.js:1917:21)\n    at jestAdapter (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-circus/build/runner.js:101:19)\n    at runTestInternal (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-runner/build/index.js:275:16)\n    at runTest (/Users/konglin/Desktop/kl-ai-app/node_modules/jest-runner/build/index.js:343:7)"
+          ],
+          "fullName": "formatWalletAddress 实际使用场景 应该正确处理钱包连接后的地址展示",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1758203789951,
+          "status": "failed",
+          "title": "应该正确处理钱包连接后的地址展示"
+        },
+        {
+          "ancestorTitles": [
+            "formatWalletAddress",
+            "实际使用场景"
+          ],
+          "duration": 1,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
+          "fullName": "formatWalletAddress 实际使用场景 应该适用于交易历史地址展示",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 2,
+          "retryReasons": [],
+          "startAt": 1758203789951,
+          "status": "passed",
+          "title": "应该适用于交易历史地址展示"
+        }
+      ],
+      "failureMessage": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mformatWalletAddress › 基本格式化功能 › 应该支持同时自定义起始和结束长度\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\n    Expected: \u001b[32m\"0x12345678...\u001b[7mef\u001b[27m12345678\"\u001b[39m\n    Received: \u001b[31m\"0x12345678...12345678\"\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 30 |\u001b[39m     test(\u001b[32m'应该支持同时自定义起始和结束长度'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[22m\n\u001b[2m     \u001b[90m 31 |\u001b[39m       \u001b[36mconst\u001b[39m address \u001b[33m=\u001b[39m \u001b[32m'0x1234567890abcdef1234567890abcdef12345678'\u001b[39m\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 32 |\u001b[39m       \u001b[36mconst\u001b[39m result \u001b[33m=\u001b[39m formatWalletAddress(address\u001b[33m,\u001b[39m \u001b[35m8\u001b[39m\u001b[33m,\u001b[39m \u001b[35m8\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 33 |\u001b[39m       expect(result)\u001b[33m.\u001b[39mtoBe(\u001b[32m'0x12345678...ef12345678'\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 34 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 35 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.result (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtests/unit/formatwallet.spec.ts\u001b[39m\u001b[0m\u001b[2m:32:13)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mformatWalletAddress › 边界情况 › 应该处理刚好等于最小长度的地址\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\n    Expected: \u001b[32m\"0x1234567890\"\u001b[39m\n    Received: \u001b[31m\"0x123456\u001b[7m...\u001b[27m7890\"\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 58 |\u001b[39m     test(\u001b[32m'应该处理刚好等于最小长度的地址'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[22m\n\u001b[2m     \u001b[90m 59 |\u001b[39m       \u001b[36mconst\u001b[39m minAddress \u001b[33m=\u001b[39m \u001b[32m'0x1234567890'\u001b[39m\u001b[33m;\u001b[39m \u001b[90m// 12字符，刚好等于默认startLength(6) + endLength(4) + 2(0x)\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 60 |\u001b[39m       \u001b[36mconst\u001b[39m result \u001b[33m=\u001b[39m formatWalletAddress(minAddress)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 61 |\u001b[39m       expect(result)\u001b[33m.\u001b[39mtoBe(\u001b[32m'0x1234567890'\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 62 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 63 |\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.result (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtests/unit/formatwallet.spec.ts\u001b[39m\u001b[0m\u001b[2m:60:13)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mformatWalletAddress › 不同类型的地址 › 应该处理比特币地址格式\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\n    Expected: \u001b[32m\"1A1zP1...fNa\"\u001b[39m\n    Received: \u001b[31m\"1A1zP1...\u001b[7mv\u001b[27mfNa\"\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 73 |\u001b[39m     test(\u001b[32m'应该处理比特币地址格式'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[22m\n\u001b[2m     \u001b[90m 74 |\u001b[39m       \u001b[36mconst\u001b[39m btcAddress \u001b[33m=\u001b[39m \u001b[32m'1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa'\u001b[39m\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 75 |\u001b[39m       \u001b[36mconst\u001b[39m result \u001b[33m=\u001b[39m formatWalletAddress(btcAddress)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 76 |\u001b[39m       expect(result)\u001b[33m.\u001b[39mtoBe(\u001b[32m'1A1zP1...fNa'\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 77 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 78 |\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.result (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtests/unit/formatwallet.spec.ts\u001b[39m\u001b[0m\u001b[2m:75:13)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mformatWalletAddress › 参数验证 › 应该处理endLength为0的情况\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\n    Expected: \u001b[32m\"0x123456...\"\u001b[39m\n    Received: \u001b[31m\"0x123456...\u001b[7m1234567890abcdef1234567890abcdef12345678\u001b[27m\"\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 100 |\u001b[39m     test(\u001b[32m'应该处理endLength为0的情况'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[22m\n\u001b[2m     \u001b[90m 101 |\u001b[39m       \u001b[36mconst\u001b[39m address \u001b[33m=\u001b[39m \u001b[32m'0x1234567890abcdef1234567890abcdef12345678'\u001b[39m\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 102 |\u001b[39m       \u001b[36mconst\u001b[39m result \u001b[33m=\u001b[39m formatWalletAddress(address\u001b[33m,\u001b[39m \u001b[35m6\u001b[39m\u001b[33m,\u001b[39m \u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 103 |\u001b[39m       expect(result)\u001b[33m.\u001b[39mtoBe(\u001b[32m'0x123456...'\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 104 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 105 |\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.result (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtests/unit/formatwallet.spec.ts\u001b[39m\u001b[0m\u001b[2m:102:13)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mformatWalletAddress › 参数验证 › 应该处理两个长度都为0的情况\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\n    Expected: \u001b[32m\"0x...\"\u001b[39m\n    Received: \u001b[31m\"0x...\u001b[7m1234567890abcdef1234567890abcdef12345678\u001b[27m\"\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 106 |\u001b[39m     test(\u001b[32m'应该处理两个长度都为0的情况'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[22m\n\u001b[2m     \u001b[90m 107 |\u001b[39m       \u001b[36mconst\u001b[39m address \u001b[33m=\u001b[39m \u001b[32m'0x1234567890abcdef1234567890abcdef12345678'\u001b[39m\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 108 |\u001b[39m       \u001b[36mconst\u001b[39m result \u001b[33m=\u001b[39m formatWalletAddress(address\u001b[33m,\u001b[39m \u001b[35m0\u001b[39m\u001b[33m,\u001b[39m \u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 109 |\u001b[39m       expect(result)\u001b[33m.\u001b[39mtoBe(\u001b[32m'0x...'\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 110 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 111 |\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.result (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtests/unit/formatwallet.spec.ts\u001b[39m\u001b[0m\u001b[2m:108:13)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mformatWalletAddress › 参数验证 › 应该处理负数参数\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\n    Expected: \u001b[32m\"0x\u001b[7m...\u001b[27m\"\u001b[39m\n    Received: \u001b[31m\"0x\u001b[7m1234567890abcdef1234567890abcdef1234567...234567890abcdef1234567890abcdef12345678\u001b[27m\"\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 112 |\u001b[39m     test(\u001b[32m'应该处理负数参数'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[22m\n\u001b[2m     \u001b[90m 113 |\u001b[39m       \u001b[36mconst\u001b[39m address \u001b[33m=\u001b[39m \u001b[32m'0x1234567890abcdef1234567890abcdef12345678'\u001b[39m\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 114 |\u001b[39m       \u001b[36mconst\u001b[39m result \u001b[33m=\u001b[39m formatWalletAddress(address\u001b[33m,\u001b[39m \u001b[33m-\u001b[39m\u001b[35m1\u001b[39m\u001b[33m,\u001b[39m \u001b[33m-\u001b[39m\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m     |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 115 |\u001b[39m       \u001b[90m// 根据实际实现行为调整预期结果\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 116 |\u001b[39m       expect(result)\u001b[33m.\u001b[39mtoBe(\u001b[32m'0x...'\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 117 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.formatWalletAddress (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtests/unit/formatwallet.spec.ts\u001b[39m\u001b[0m\u001b[2m:114:22)\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mformatWalletAddress › 实际使用场景 › 应该正确处理钱包连接后的地址展示\u001b[39m\u001b[22m\n\n    \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n    Expected pattern: \u001b[32m/^0x[a-fA-F0-9]{6}\\.\\.\\..[a-fA-F0-9]{4}$/\u001b[39m\n    Received string:  \u001b[31m\"0x742d35...D8c8\"\u001b[39m\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 159 |\u001b[39m     test(\u001b[32m'应该正确处理钱包连接后的地址展示'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[22m\n\u001b[2m     \u001b[90m 160 |\u001b[39m       \u001b[36mconst\u001b[39m walletAddress \u001b[33m=\u001b[39m \u001b[32m'0x742d35Cc574C46C3c7cA28e3C5C1a8a8b3e8D8c8'\u001b[39m\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m    \u001b[31m\u001b[1m>\u001b[22m\u001b[2m\u001b[39m\u001b[90m 161 |\u001b[39m       \u001b[36mconst\u001b[39m result \u001b[33m=\u001b[39m formatWalletAddress(walletAddress)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m     |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[2m\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 162 |\u001b[39m       expect(result)\u001b[33m.\u001b[39mtoBe(\u001b[32m'0x742d35...D8c8'\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 163 |\u001b[39m       expect(result)\u001b[33m.\u001b[39mtoMatch(\u001b[35m/^0x[a-fA-F0-9]{6}\\.\\.\\..[a-fA-F0-9]{4}$/\u001b[39m)\u001b[33m;\u001b[39m\u001b[22m\n\u001b[2m     \u001b[90m 164 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.walletAddress (\u001b[22m\u001b[2m\u001b[0m\u001b[36mtests/unit/formatwallet.spec.ts\u001b[39m\u001b[0m\u001b[2m:161:42)\u001b[22m\u001b[2m\u001b[22m\n"
+    }
+  ],
+  "wasInterrupted": false
+}

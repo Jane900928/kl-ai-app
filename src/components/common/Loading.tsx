@@ -21,7 +21,7 @@ const LoadingExample: React.FC<LoadingProps> = ({
       <div
         className={`animate-spin rounded-full border-4 border-t-transparent ${color} ${sizeClasses[size]}`}
       />
-      {text && <span className="text-gray-600">{text}</span>}
+      {text && <span className="text-gray-600">{text}11</span>}
     </div>
   );
 };

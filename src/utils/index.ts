@@ -1,7 +1,7 @@
 export function formatWalletAddress(
   address: string | null | undefined,
   startLength = 6,
-  endLength = 4
+  endLength = 4,
 ): string {
   // 1. 处理空值/undefined/null
   if (!address) return '';
@@ -31,7 +31,5 @@ export function formatWalletAddress(
     return `${prefix}...`; // 双0参数：仅前缀+省略号
   }
   // 若 endPart 为空（validEnd=0），则只拼接 "前缀+起始+..."
-  return validEnd === 0 
-    ? `${prefix}${startPart}...` 
-    : `${prefix}${startPart}...${endPart}`;
+  return validEnd === 0 ? `${prefix}${startPart}...` : `${prefix}${startPart}...${endPart}`;
 }

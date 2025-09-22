@@ -35,8 +35,7 @@
 // export default Index;
 
 import { useImmer } from '@hooks/useImmer';
-import { atom, useAtom } from 'jotai';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 // const textAtom = atom('hello');
 
 const Index = () => {

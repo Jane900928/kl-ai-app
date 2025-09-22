@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 interface LoadingProps {
   size?: 'small' | 'medium' | 'large';
@@ -16,7 +16,6 @@ const LoadingExample: React.FC<LoadingProps> = ({
     medium: 'w-8 h-8',
     large: 'w-12 h-12',
   };
-  const [state, setState] = useState(1);
   return (
     <div className="flex flex-col items-center justify-center gap-3">
       <div

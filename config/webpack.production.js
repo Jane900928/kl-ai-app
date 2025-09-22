@@ -27,10 +27,10 @@ module.exports = {
             }),
         ],
     },
-    externals:{
-        react:'react',
-        'react-dom':'ReactDOM'
-    },
+    // externals:{
+    //     react:'react',
+    //     'react-dom':'ReactDOM'
+    // },
     plugins: [
         new HtmlWebpackPlugin({
             title: 'KongLin',

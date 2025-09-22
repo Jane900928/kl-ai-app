@@ -1,3 +1,4 @@
+/// <reference types="cypress" />
 describe('404 Page', () => {
   it('should display 404 page for non-existent routes', () => {
     // 访问不存在的路由
@@ -5,7 +6,7 @@ describe('404 Page', () => {
     
     // 检查404页面内容
     cy.contains('404').should('be.visible');
-    cy.contains('Page Not Found').should('be.visible');
+    cy.contains('页面未找到').should('be.visible');
   });
 
   it('should maintain header on 404 page', () => {

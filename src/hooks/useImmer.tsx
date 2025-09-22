@@ -44,16 +44,16 @@ export function useImmer<T>(initialValue: T) {
     // 处理初始值：如果是函数则执行获取返回值，否则直接使用
     // 第二个参数 true 表示深度冻结，确保所有嵌套对象都不可被修改
     freeze(
-      typeof initialValue === 'function' 
-        ? (initialValue as () => T)()  // 执行函数获取初始值
-        : initialValue, 
-      true 
+      typeof initialValue === 'function'
+        ? (initialValue as () => T)() // 执行函数获取初始值
+        : initialValue,
+      true,
     ),
   );
 
   // 返回状态和更新函数（用 useCallback 缓存更新函数提升性能）
   return [
-    val,  // 当前状态值
+    val, // 当前状态值
     useCallback(
       (updater: T | DraftFunction<T>) => {
         // 判断更新方式：函数式更新（修改草稿）或直接赋值更新
@@ -62,9 +62,9 @@ export function useImmer<T>(initialValue: T) {
           // produce 接收当前状态和修改函数，返回新的不可变状态
           updateValue(
             produce(
-              val,  // 基于当前状态创建草稿
-              updater as DraftFunction<T>  // 应用草稿修改逻辑
-            )
+              val, // 基于当前状态创建草稿
+              updater as DraftFunction<T>, // 应用草稿修改逻辑
+            ),
           );
         } else {
           // 直接赋值更新：冻结新值后更新状态
@@ -72,11 +72,10 @@ export function useImmer<T>(initialValue: T) {
           updateValue(freeze(updater));
         }
       },
-      [val]  // 依赖项为当前状态，状态变化时才重新创建更新函数
+      [val], // 依赖项为当前状态，状态变化时才重新创建更新函数
     ),
   ];
 }
-
 
 // js实现
 

@@ -50,7 +50,7 @@ const Index = () => {
   useEffect(() => {
     // setText({ data: '123', info: '123' });
 
-    setText((draft) => {
+    setText(draft => {
       draft.data = '123';
     });
   }, [setText]);
@@ -69,7 +69,7 @@ const Index = () => {
 
     // const contractInstance = InfoContract__factory.connect(CONTRACT_ADDRESS, signer);
     // contractInstance.setInfo()
-    setText((draft) => {
+    setText(draft => {
       draft.data = Math.random().toString(36).substring(7); // 生成随机字符串
       draft.info = new Date().toLocaleTimeString(); // 更新时间
     });

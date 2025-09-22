@@ -26,7 +26,7 @@ describe('formatWalletAddress 函数测试', () => {
   describe('自定义参数测试', () => {
     test('应该支持同时自定义起始和结尾长度', () => {
       const result = formatWalletAddress(validAddress, 8, 6);
-      expect(result).toBe('0x742d35Cc...b8c5e');
+      expect(result).toBe('0x742d35Cc...9b8c5e');
     });
 
     test('应该支持较大的起始和结尾长度', () => {

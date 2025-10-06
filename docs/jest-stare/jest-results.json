@@ -26,7 +26,7 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1758552133231,
+  "startTime": 1758554975142,
   "success": false,
   "testResults": [
     {
@@ -37,16 +37,16 @@
       "numTodoTests": 0,
       "openHandles": [],
       "perfStats": {
-        "end": 1758552133331,
-        "loadTestEnvironmentEnd": 1758552133279,
-        "loadTestEnvironmentStart": 1758552133262,
-        "runtime": 52,
-        "setupAfterEnvEnd": 1758552133321,
-        "setupAfterEnvStart": 1758552133320,
-        "setupFilesEnd": 1758552133279,
-        "setupFilesStart": 1758552133279,
+        "end": 1758554975256,
+        "loadTestEnvironmentEnd": 1758554975191,
+        "loadTestEnvironmentStart": 1758554975173,
+        "runtime": 65,
+        "setupAfterEnvEnd": 1758554975247,
+        "setupAfterEnvStart": 1758554975245,
+        "setupFilesEnd": 1758554975191,
+        "setupFilesStart": 1758554975191,
         "slow": false,
-        "start": 1758552133279
+        "start": 1758554975191
       },
       "skipped": false,
       "snapshot": {
@@ -74,7 +74,7 @@
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758552133323,
+          "startAt": 1758554975248,
           "status": "passed",
           "title": "应该正确格式化标准的以太坊地址（带0x前缀）"
         },
@@ -92,7 +92,7 @@
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758552133326,
+          "startAt": 1758554975252,
           "status": "passed",
           "title": "应该正确格式化不带0x前缀的地址"
         },
@@ -110,7 +110,7 @@
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758552133326,
+          "startAt": 1758554975252,
           "status": "passed",
           "title": "应该使用默认参数（startLength=6, endLength=4）"
         },
@@ -128,7 +128,7 @@
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758552133327,
+          "startAt": 1758554975252,
           "status": "passed",
           "title": "应该支持同时自定义起始和结尾长度"
         },
@@ -146,7 +146,7 @@
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758552133327,
+          "startAt": 1758554975252,
           "status": "passed",
           "title": "应该支持较大的起始和结尾长度"
         },
@@ -164,7 +164,7 @@
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758552133327,
+          "startAt": 1758554975253,
           "status": "passed",
           "title": "空字符串应该返回空字符串"
         },
@@ -182,7 +182,7 @@
           "location": null,
           "numPassingAsserts": 2,
           "retryReasons": [],
-          "startAt": 1758552133327,
+          "startAt": 1758554975253,
           "status": "passed",
           "title": "null 或 undefined 应该返回空字符串"
         },
@@ -200,7 +200,7 @@
           "location": null,
           "numPassingAsserts": 3,
           "retryReasons": [],
-          "startAt": 1758552133327,
+          "startAt": 1758554975253,
           "status": "passed",
           "title": "地址长度小于等于 startLength + endLength 时应该返回原地址"
         },
@@ -209,7 +209,7 @@
             "formatWalletAddress 函数测试",
             "边界情况测试"
           ],
-          "duration": 1,
+          "duration": 0,
           "failing": false,
           "failureDetails": [],
           "failureMessages": [],
@@ -218,7 +218,7 @@
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758552133327,
+          "startAt": 1758554975253,
           "status": "passed",
           "title": "刚好超过最小长度的地址应该被格式化"
         },
@@ -227,7 +227,7 @@
             "formatWalletAddress 函数测试",
             "前缀处理测试"
           ],
-          "duration": 0,
+          "duration": 1,
           "failing": false,
           "failureDetails": [],
           "failureMessages": [],
@@ -236,7 +236,7 @@
           "location": null,
           "numPassingAsserts": 2,
           "retryReasons": [],
-          "startAt": 1758552133328,
+          "startAt": 1758554975253,
           "status": "passed",
           "title": "应该保留原有的0x前缀"
         },
@@ -254,7 +254,7 @@
           "location": null,
           "numPassingAsserts": 2,
           "retryReasons": [],
-          "startAt": 1758552133328,
+          "startAt": 1758554975254,
           "status": "passed",
           "title": "没有0x前缀的地址不应该添加前缀"
         },
@@ -272,7 +272,7 @@
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758552133328,
+          "startAt": 1758554975254,
           "status": "passed",
           "title": "应该正确处理大小写混合的地址"
         },
@@ -290,7 +290,7 @@
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758552133328,
+          "startAt": 1758554975254,
           "status": "passed",
           "title": "应该正确处理全大写地址"
         },
@@ -308,7 +308,7 @@
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758552133328,
+          "startAt": 1758554975254,
           "status": "passed",
           "title": "应该正确处理全小写地址"
         },
@@ -326,7 +326,7 @@
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758552133328,
+          "startAt": 1758554975254,
           "status": "passed",
           "title": "起始长度为0时应该正常工作"
         },
@@ -344,7 +344,7 @@
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758552133330,
+          "startAt": 1758554975255,
           "status": "passed",
           "title": "结尾长度为0时应该正常工作"
         },
@@ -362,7 +362,7 @@
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758552133330,
+          "startAt": 1758554975255,
           "status": "passed",
           "title": "起始和结尾长度都为0时应该只显示前缀和省略号"
         },
@@ -380,27 +380,9 @@
           "location": null,
           "numPassingAsserts": 2,
           "retryReasons": [],
-          "startAt": 1758552133330,
+          "startAt": 1758554975255,
           "status": "passed",
           "title": "负数参数应该被处理为0"
-        },
-        {
-          "ancestorTitles": [
-            "formatWalletAddress 函数测试",
-            "性能和压力测试"
-          ],
-          "duration": 0,
-          "failing": false,
-          "failureDetails": [],
-          "failureMessages": [],
-          "fullName": "formatWalletAddress 函数测试 性能和压力测试 应该能处理非常长的地址字符串",
-          "invocations": 1,
-          "location": null,
-          "numPassingAsserts": 1,
-          "retryReasons": [],
-          "startAt": 1758552133330,
-          "status": "passed",
-          "title": "应该能处理非常长的地址字符串"
         },
         {
           "ancestorTitles": [
@@ -411,12 +393,30 @@
           "failing": false,
           "failureDetails": [],
           "failureMessages": [],
+          "fullName": "formatWalletAddress 函数测试 性能和压力测试 应该能处理非常长的地址字符串",
+          "invocations": 1,
+          "location": null,
+          "numPassingAsserts": 1,
+          "retryReasons": [],
+          "startAt": 1758554975255,
+          "status": "passed",
+          "title": "应该能处理非常长的地址字符串"
+        },
+        {
+          "ancestorTitles": [
+            "formatWalletAddress 函数测试",
+            "性能和压力测试"
+          ],
+          "duration": 0,
+          "failing": false,
+          "failureDetails": [],
+          "failureMessages": [],
           "fullName": "formatWalletAddress 函数测试 性能和压力测试 应该能批量处理多个地址",
           "invocations": 1,
           "location": null,
           "numPassingAsserts": 1,
           "retryReasons": [],
-          "startAt": 1758552133330,
+          "startAt": 1758554975256,
           "status": "passed",
           "title": "应该能批量处理多个地址"
         }

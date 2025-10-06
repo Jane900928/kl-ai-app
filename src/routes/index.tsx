@@ -12,7 +12,7 @@ const Layout = () => (
 );
 
 //懒加载
-const Test = lazy(() => import('@components/test/Index'));
+// const Test = lazy(() => import('@components/test/Index'));
 
 const Routes: RouteObject[] = [];
 
@@ -25,12 +25,12 @@ const mainRoutes = {
     { path: '404', element: <PageNotFoundView /> },
   ],
 };
+
 const notFoundRoute: RouteObject = {
   path: '*',
-  element: <PageNotFoundView />
+  element: <PageNotFoundView />,
 };
 
-
-Routes.push(mainRoutes,notFoundRoute);
+Routes.push(mainRoutes, notFoundRoute);
 
 export default Routes;

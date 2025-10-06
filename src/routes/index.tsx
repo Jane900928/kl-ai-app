@@ -3,7 +3,7 @@ import PageNotFoundView from '@components/common/PageNotFoundView';
 import MainLayout from '@layouts/Layout';
 import DappTest from '@pages/DappTest';
 import Home from '@pages/Home';
-import { lazy, Suspense } from 'react';
+import { Suspense } from 'react';
 import { RouteObject } from 'react-router-dom';
 const Layout = () => (
   <Suspense fallback={<Loading />}>

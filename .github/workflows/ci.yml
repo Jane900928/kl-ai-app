@@ -70,8 +70,10 @@ jobs:
         run: |
           echo "Checking dist/ folder..."
           ls -la dist/
+          echo "Checking scripts/ folder..."
+          ls -la dist/scripts/
           test -f dist/index.html
-          test -f dist/main.js
+          test -f dist/scripts/main.*.bundle.js
 
       - name: 📦 Cache build artifacts
         uses: actions/cache@v4
